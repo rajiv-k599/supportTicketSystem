@@ -66,6 +66,9 @@ namespace TicketSystem.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
+                    b.Property<long>("CustomerId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Designation")
                         .IsRequired()
                         .HasColumnType("text");
@@ -86,6 +89,8 @@ namespace TicketSystem.Migrations
                         .HasColumnType("character(1)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("CustomerContacts");
                 });
@@ -123,6 +128,17 @@ namespace TicketSystem.Migrations
                         .IsRequired();
 
                     b.Navigation("CustomerGroup");
+                });
+
+            modelBuilder.Entity("TicketSystem.Models.Customer.CustomerContact", b =>
+                {
+                    b.HasOne("TicketSystem.Models.Customer.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
                 });
 #pragma warning restore 612, 618
         }

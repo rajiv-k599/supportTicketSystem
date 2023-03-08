@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "r1ff/2pbGgJTwENv6jyzWnJENplKMVrJ9Ni/n+cwOMY9/wGhmKPROziKEXlGoYy7U4x7W4Fx1jgM18DCJPNLEQ==",
+  "dgSpecHash": "Xh+Pjhfuce+ANtxDZWqKpqMA68+RLXm9Q1mapsOnRnE5UOD1W45xQWY+3weZFJXmh9yUsEdR7viqvXE6Ly3XnA==",
   "success": true,
   "projectFilePath": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\TicketSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\bootstrap\\5.0.0\\bootstrap.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\datatables.net\\1.12.1\\datatables.net.1.12.1.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\datatables.net-bs5\\1.13.3\\datatables.net-bs5.1.13.3.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\jquery\\1.7.0\\jquery.1.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

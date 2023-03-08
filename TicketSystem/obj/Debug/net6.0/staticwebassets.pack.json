@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\ACER\\.nuget\\packages\\datatables.net-bs5\\1.13.3\\contentFiles\\any\\any\\wwwroot\\css\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\.nuget\\packages\\datatables.net-bs5\\1.13.3\\contentFiles\\any\\any\\wwwroot\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\.nuget\\packages\\datatables.net-bs5\\1.13.3\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\.nuget\\packages\\datatables.net-bs5\\1.13.3\\contentFiles\\any\\any\\wwwroot\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
       "Id": "C:\\Users\\ACER\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
       "PackagePath": "staticwebassets\\noty.js"
     },
@@ -23,6 +39,186 @@
     {
       "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.bulma.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.foundation.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.jqueryui.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\dataTables.semanticui.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_asc.png"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_both.png"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_desc.png"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.bulma.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.foundation.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.jqueryui.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\dataTables.semanticui.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\DataTables-1.12.1\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\datatables.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\datatables.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\datatables.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\datatables.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\datatables.min.css",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\datatables.min.css"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\DataTables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\lib\\DataTables\\datatables.min.js"
     },
     {
       "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\lib\\bootstrap\\LICENSE",

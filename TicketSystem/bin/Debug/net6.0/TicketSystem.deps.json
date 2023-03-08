@@ -42,6 +42,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "7.0.3",
           "NToastNotify": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3",
+          "datatables.net-bs5": "1.13.3",
           "Microsoft.AspNetCore.Antiforgery.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -346,6 +347,18 @@
           "lib/net5.0/AspNetCoreHero.ToastNotification.dll": {}
         }
       },
+      "bootstrap/5.0.0": {},
+      "datatables.net/1.12.1": {
+        "dependencies": {
+          "jQuery": "1.7.0"
+        }
+      },
+      "datatables.net-bs5/1.13.3": {
+        "dependencies": {
+          "bootstrap": "5.0.0",
+          "datatables.net": "1.12.1"
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -354,6 +367,7 @@
           }
         }
       },
+      "jQuery/1.7.0": {},
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "2.2.0",
@@ -3476,12 +3490,40 @@
       "path": "aspnetcorehero.toastnotification/1.1.0",
       "hashPath": "aspnetcorehero.toastnotification.1.1.0.nupkg.sha512"
     },
+    "bootstrap/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NKQFzFwrfWOMjTwr+X/2iJyCveuAGF+fNzkxyB0YW45+InVhcE9PUxoL1a8Vmc/Lq9E/CQd4DjO8kU32P4w/Gg==",
+      "path": "bootstrap/5.0.0",
+      "hashPath": "bootstrap.5.0.0.nupkg.sha512"
+    },
+    "datatables.net/1.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7ArWbq7HCVj6uciLXUoFlW1ZvfYNbCPxFnniAjD4NKb/iAsTYWGZYRjdH3Ir8+0N8rR6muPTF5nZ4Mqf1nUn9A==",
+      "path": "datatables.net/1.12.1",
+      "hashPath": "datatables.net.1.12.1.nupkg.sha512"
+    },
+    "datatables.net-bs5/1.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pGzU5nQIV3Nam5BfX4PMIC6DSiSIz+1ujYDKlegRmou1OBn2x5CSOHR1PQG3t8QGNT52IlY9FI35c7aZVqt1Qw==",
+      "path": "datatables.net-bs5/1.13.3",
+      "hashPath": "datatables.net-bs5.1.13.3.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "jQuery/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UEZuBreHZNLao3z9zNPeSadyoPwKDP/5kFh+Mn1Pm9ZS0czk7bv0O6RreloGSIMAfTLZCiigNkuPb2bXKtUM+g==",
+      "path": "jquery/1.7.0",
+      "hashPath": "jquery.1.7.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",

@@ -11,5 +11,10 @@ namespace TicketSystem.Models.Customer
         public string PhoneNumber { get; set; }
         public string MobileNumber { get; set; }
         public char Status { get; set; }
+
+        public virtual Customer Customer { get; set; }
+
+        public long CustomerId { get; set; }    
+
     }
 }

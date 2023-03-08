@@ -75,6 +75,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "datatables.net-bs5": {
+              "target": "Package",
+              "version": "[1.13.3, )"
             }
           },
           "imports": [
