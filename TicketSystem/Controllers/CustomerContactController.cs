@@ -2,9 +2,9 @@
 
 namespace TicketSystem.Controllers
 {
-    public class CustomerContact : Controller
+    public class CustomerContactController : Controller
     {
-        public CustomerContact() 
+        public CustomerContactController() 
         { 
         
         }

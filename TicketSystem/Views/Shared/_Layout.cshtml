@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TicketSystem.styles.css" asp-append-version="true" />
-    <link href="~/lib/DataTables/datatables.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/v/dt/dt-1.13.3/datatables.min.css" rel="stylesheet" />
+    <link href="~/lib/DataTables/datatables.min.css" rel="stylesheet" asp-append-version="true" />
+    
 </head>
 <body>
     <header>
@@ -59,12 +59,12 @@
             &copy; 2023 - TicketSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    <script src="~/lib/DataTables/datatables.min.js" asp-append-version="true"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/lib/DataTables/datatables.min.js"></script>
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdn.datatables.net/v/dt/dt-1.13.3/datatables.min.js"></script>
+   
     @await Component.InvokeAsync("Notyf")
     @await RenderSectionAsync("Scripts", required: false)
 

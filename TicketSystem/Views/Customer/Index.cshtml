@@ -1,6 +1,6 @@
 ﻿@model TicketSystem.ViewModel.CustomerVm
 @{
-   
+    int n = 1;
 }
 
 <nav class="navbar navbar-expand-sm bg-light ">
@@ -22,35 +22,42 @@
 
 <div class="container mt-3">
 
-   @* <table class="table table-bordered" id="myTable">
+    <table class="table table-bordered" id="myTable">
         <thead>
             <tr>
                 <th>Sn</th>
-                <th>Group Name</th>
-                <th>Description</th>
+                <th>Customer Group</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Pan No</th>
+
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var items in Model.customer)
+            @foreach (var items in Model.customers)
             {
                 <tr>
                     <td>@n</td>
+                    <td>@items.CustomerGroup.Name</td>
                     <td>@items.Name</td>
-                    <td>@items.Description</td>
+                    <td>@items.Email</td>
+                    <td>@items.Phone</td>
+                    <td>@items.Pan</td>
                     <td>
-                        <a class="btn btn-primary" asp-action="Edit" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa fa-pencil-square-o"> Update</i></a>
-                        <a class="btn btn-danger" asp-action="Delete" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa  fa-trash-o"> Delete</i></a>
+                        <a class="btn btn-primary" asp-action="Edit" asp-controller="Customer" asp-route-id="@items.Id"><i class="fa fa-pencil-square-o"> Update</i></a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-controller="Customer" asp-route-id="@items.Id"><i class="fa  fa-trash-o"> Delete</i></a>
                     </td>
                     @{
                         n++;
-                    }c
+                    }
 
                 </tr>
 
             }
         </tbody>
-    </table>*@
+    </table>
 </div>
 <script>
     $(document).ready(function () {
