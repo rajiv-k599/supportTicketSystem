@@ -20,9 +20,10 @@ namespace TicketSystem.ViewModel
 
         public List<CustomerGroup> CustomerGroupList { get; set; }
 
-        public List<CustomerContact> CustomersContactList { get; set; }
-
         public SelectList CustomerGroupOption() => new SelectList(CustomerGroupList, nameof(CustomerGroup.Id), nameof(CustomerGroup.Name));
 
+        public List<CustomerContact> CustomersContactList { get; set; }
+
+        public CustomerContactVm contactVm { get; set; }
     }
 }

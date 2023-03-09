@@ -17,8 +17,8 @@
         </ul>
     </div>
 </nav>
-<div>
-    <div class="card">
+<div class="container d-flex justify-content-center mt-3 ">
+    <div class="card col-8">
         <div class="card-header">
             Customer Details 
         </div>
@@ -32,17 +32,23 @@
             </table>
         </div>
     </div>
-    <div class="card">
+    </div>
+<div class="container d-flex justify-content-center mt-3 ">
+    <div class="card col-8">
         <div class="card-header">
-            Customer Contact <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            <div class="d-flex">
+                <div class="col">Customer Contact</div> <div class="col text-end">
+                    <button type="button" class="b1 btn-sm text-end" data-bs-toggle="modal" data-bs-target="#myModal">
                 Add
             </button>
+            </div>
+            </div>
         </div>
         <div class="card-body">
-            <table>
+            <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <td>S.N</td>
+                    <th>S.N</th>
                     <th>Name</th>
                     <th>Degisnation</th>
                     <th>Mobile No</th>
@@ -51,14 +57,19 @@
                 </tr>
                 </thead>
                 <tbody>
+                    @foreach(var items in Model.CustomersContactList)
+                    {
                     <tr>
-                        <td>1</td>
-                        <td>hkd</td>
-                        <td>skdhfksdj</td>
-                        <td>984132</td>
-                        <td>465465465</td>
-                        <th> <a class="nav-link text-white b1" asp-controller="" asp-action="">Remove</a></th>
+                        <td>@n</td>
+                        <td>@items.Name</td>
+                        <td>@items.Designation</td>
+                        <td>@items.MobileNumber</td>
+                        <td>@items.PhoneNumber</td>
+                         <td>  
+                             <a class="btn btn-link" asp-action="RemoveContact" asp-controller="Customer" asp-route-id="@items.Id"><i class="fa  fa-trash-o"> Remove</i></a>
+                         </td>
                     </tr>
+                    }
                 </tbody>
                 
             </table>
@@ -67,22 +78,47 @@
   
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+
+            <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
+
+            <!-- Modal body -->
             <div class="modal-body">
-                ...
+                <form class="" method="post" asp-action="AddContact">
+                    <input type="hidden" class="form-control" id="" asp-for="contactVm.CustomerId" value="@Model.Id" required>
+                    <div class="form-group">
+                        <label >Name:</label>
+                        <input type="text" class="form-control" id="" asp-for="contactVm.Name" placeholder="" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label >Designation:</label>
+                        <input type="text" class="form-control" id="" asp-for="contactVm.Designation" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile No:</label>
+                        <input type="number" class="form-control" id="" asp-for="contactVm.MobileNumber" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone No:</label>
+                        <input type="number" class="form-control" id="" asp-for="contactVm.PhoneNumber" placeholder="" required>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary mt-2">Save</button>
+                </form>
             </div>
+
+            <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
+
         </div>
     </div>
 </div>
