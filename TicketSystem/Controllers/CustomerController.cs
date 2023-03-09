@@ -57,9 +57,21 @@ namespace TicketSystem.Controllers
            
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult Details()
+        public IActionResult Details(long id)
         {
-            return View();
+            var customer = _dbContext.Customers.Where(x => x.Id == id && x.Status == Status.Active).FirstOrDefault();
+            var data = new CustomerVm()
+            {
+                Id = customer.Id,
+                CustomerGroupId = customer.CustomerGroupId,
+                Name = customer.Name,
+                Email = customer.Email,
+                Phone = customer.Phone,
+                Pan = customer.Pan
+            };
+            data.CustomerGroup = _dbContext.CustomerGroups.Where(x => x.Id == customer.CustomerGroupId && x.Status == Status.Active).FirstOrDefault();
+
+            return View(data);
         }
 
         public IActionResult Edit(long id)
@@ -74,7 +86,7 @@ namespace TicketSystem.Controllers
                 Phone = customer.Phone,
                 Pan = customer.Pan
             };
-            data.customergroups = _dbContext.CustomerGroups.Where(X => X.Status == Status.Active).ToList();
+            data.CustomerGroupList = _dbContext.CustomerGroups.Where(X => X.Status == Status.Active).ToList();
 
             return View(data);
         }

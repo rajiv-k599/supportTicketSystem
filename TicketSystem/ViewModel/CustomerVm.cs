@@ -14,11 +14,15 @@ namespace TicketSystem.ViewModel
         public char Status { get; set; }
         public long CustomerGroupId { get; set; }
 
-        public List<Customer> customers { get; set; }
+        public List<Customer> Customers { get; set; }
 
-        public List<CustomerGroup> customergroups { get; set; }
+        public CustomerGroup CustomerGroup { get; set; }
 
-        public SelectList CustomerGroupOption() => new SelectList(customergroups, nameof(CustomerGroup.Id), nameof(CustomerGroup.Name));
+        public List<CustomerGroup> CustomerGroupList { get; set; }
+
+        public List<CustomerContact> CustomersContactList { get; set; }
+
+        public SelectList CustomerGroupOption() => new SelectList(CustomerGroupList, nameof(CustomerGroup.Id), nameof(CustomerGroup.Name));
 
     }
 }
