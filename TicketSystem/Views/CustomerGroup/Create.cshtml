@@ -1,7 +1,9 @@
 ﻿@model TicketSystem.ViewModel.CustomerGroupVm
-
+@{
+    Layout = "Layout";
+}
 <nav class="navbar navbar-expand-sm bg-light ">
-
+     <div class="container">Customer Group Info</div>
     <div class="container-fluid justify-content-end">
         <!-- Links -->
         <ul class="navbar-nav">
@@ -18,22 +20,20 @@
 </nav>
 
 
-
-
 <div class="container p-5">
     <div class="card m-auto col-6">
-     <div class="card-header">
-         Create Customer Group
+        <div class="card-header" style=" font-size:1.2rem; ">
+        Create Customer Group 
      </div>
      <div class="card-body">
     <form class="" method="post" asp-action="Create"> 
         <div class="form-group">
             <label for="groupName">Group Name:</label>
-            <input type="text" class="form-control" id="groupName" asp-for="Name" placeholder="Enter group name" required>
+            <input type="text" class="form-control input" id="groupName" asp-for="Name" placeholder="" required>
         </div>
         <div class="form-group">
             <label for="groupDescription">Group Description:</label>
-            <textarea class="form-control" id="groupDescription" rows="3" asp-for="Description" placeholder="Enter group description"></textarea>
+            <textarea class="form-control" id="groupDescription" rows="3" asp-for="Description" placeholder=""></textarea>
         </div>
         <button type="submit" class="btn btn-primary mt-2">Create</button>
     </form>

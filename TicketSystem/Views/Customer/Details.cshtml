@@ -1,9 +1,11 @@
 ﻿@model TicketSystem.ViewModel.CustomerVm
 @{
     int n = 1;
+    Layout = "Layout";
 }
 
 <nav class="navbar navbar-expand-sm bg-light ">
+    <div class="container">Customer Info</div>
     <div class="container-fluid justify-content-end">
         <!-- Links -->
         <ul class="navbar-nav">
@@ -18,64 +20,67 @@
     </div>
 </nav>
 <div class="container d-flex justify-content-center mt-3 ">
-    <div class="card col-8">
-        <div class="card-header">
-            Customer Details 
+    <div class="card col-10">
+        <div class="card-header" style=" font-size:1.2rem; ">
+            Customer Details
         </div>
         <div class="card-body">
-            <table>
-                <tr><td>Customer Group:</td><td> @Model.CustomerGroup.Name</td></tr>
-                <tr><td>Name:</td><td> @Model.Name</td></tr>
-                <tr><td>Email:</td><td> @Model.Email</td></tr>
-                <tr><td>Phone No:</td><td> @Model.Phone</td></tr>
-                <tr><td>Pan No:</td><td> @Model.Pan</td></tr>
+            <table class="table">
+                <tr><th>Customer Group:</th><td class="text-success" style="font-weight:bold;"> @Model.CustomerGroup.Name</td></tr>
+                <tr><th>Name:</th><td class="text-success" style="font-weight:bold;"> @Model.Name</td></tr>
+                <tr><th>Email:</th><td class="text-success" style="font-weight:bold;"> @Model.Email</td></tr>
+                <tr><th>Phone No:</th><td class="text-success" style="font-weight:bold;"> @Model.Phone</td></tr>
+                <tr><th>Pan No:</th><td class="text-success" style="font-weight:bold;"> @Model.Pan</td></tr>
             </table>
         </div>
     </div>
-    </div>
+</div>
 <div class="container d-flex justify-content-center mt-3 ">
-    <div class="card col-8">
+    <div class="card col-10">
         <div class="card-header">
             <div class="d-flex">
-                <div class="col">Customer Contact</div> <div class="col text-end">
+                <div class="col" style=" font-size:1.2rem; ">Customer Contact</div> <div class="col text-end">
                     <button type="button" class="b1 btn-sm text-end" data-bs-toggle="modal" data-bs-target="#myModal">
-                Add
-            </button>
-            </div>
+                        Add
+                    </button>
+                </div>
             </div>
         </div>
         <div class="card-body">
             <table class="table table-bordered">
                 <thead>
-                <tr>
-                    <th>S.N</th>
-                    <th>Name</th>
-                    <th>Degisnation</th>
-                    <th>Mobile No</th>
-                    <th>Phone No</th>
-                    <th>Action</th>
-                </tr>
+                    <tr>
+                        <th>S.N</th>
+                        <th>Name</th>
+                        <th>Degisnation</th>
+                        <th>Mobile No</th>
+                        <th>Phone No</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    @foreach(var items in Model.CustomersContactList)
+                    @foreach (var items in Model.CustomersContactList)
                     {
-                    <tr>
-                        <td>@n</td>
-                        <td>@items.Name</td>
-                        <td>@items.Designation</td>
-                        <td>@items.MobileNumber</td>
-                        <td>@items.PhoneNumber</td>
-                         <td>  
-                             <a class="btn btn-link" asp-action="RemoveContact" asp-controller="Customer" asp-route-id="@items.Id"><i class="fa  fa-trash-o"> Remove</i></a>
-                         </td>
-                    </tr>
+                        <tr>
+                            <td>@n</td>
+                            <td>@items.Name</td>
+                            <td>@items.Designation</td>
+                            <td>@items.MobileNumber</td>
+                            <td>@items.PhoneNumber</td>
+                            <td>
+                                <a class="btn btn-link" asp-action="RemoveContact" asp-controller="Customer" asp-route-id="@items.Id">Remove</a>
+                            </td>
+                            @{
+                                n++;
+                            }
+                        </tr>
                     }
                 </tbody>
-                
+
             </table>
         </div>
     </div>
-  
+
 </div>
 <!-- Modal -->
 <div class="modal fade" id="myModal">
@@ -93,12 +98,12 @@
                 <form class="" method="post" asp-action="AddContact">
                     <input type="hidden" class="form-control" id="" asp-for="contactVm.CustomerId" value="@Model.Id" required>
                     <div class="form-group">
-                        <label >Name:</label>
+                        <label>Name:</label>
                         <input type="text" class="form-control" id="" asp-for="contactVm.Name" placeholder="" required>
 
                     </div>
                     <div class="form-group">
-                        <label >Designation:</label>
+                        <label>Designation:</label>
                         <input type="text" class="form-control" id="" asp-for="contactVm.Designation" placeholder="" required>
                     </div>
                     <div class="form-group">
@@ -109,7 +114,7 @@
                         <label for="">Phone No:</label>
                         <input type="number" class="form-control" id="" asp-for="contactVm.PhoneNumber" placeholder="" required>
                     </div>
-                   
+
                     <button type="submit" class="btn btn-primary mt-2">Save</button>
                 </form>
             </div>

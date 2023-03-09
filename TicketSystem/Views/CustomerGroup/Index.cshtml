@@ -1,10 +1,11 @@
 ﻿@model TicketSystem.ViewModel.CustomerGroupVm
 @{
+    Layout = "Layout";
     int n = 1;
 }
 
 <nav class="navbar navbar-expand-sm bg-light ">
-
+   <div class="container">Customer Group Info</div>
     <div class="container-fluid justify-content-end">
         <!-- Links -->
         <ul class="navbar-nav">
@@ -22,7 +23,7 @@
 
 <div class="container mt-3">
    
-    <table class="table table-bordered col-6" id="dataTable">
+    <table class="table table-bordered table-light rounded-2 col-6" id="datatablesSimple">
         <thead>
             <tr>
                 <th>Sn</th>
@@ -39,8 +40,8 @@
                 <td>@items.Name</td>
                 <td>@items.Description</td>
                 <td>
-                        <a class="btn btn-primary" asp-action="Edit" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa fa-pencil-square-o"> Update</i></a>
-                        <a class="btn btn-danger" asp-action="Delete" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa  fa-trash-o"> Delete</i></a>
+                        <a class="btn btn-primary btn-sm" asp-action="Edit" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa-solid fa-pen-to-square"></i>Update</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-controller="CustomerGroup" asp-route-id="@items.Id"><i class="fa-solid fa-trash"></i> Delete</a>
                 </td>
                  @{
                     n++;
@@ -53,8 +54,5 @@
     </table>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#dataTable').DataTable();
-      
-    });
+ 
 </script>

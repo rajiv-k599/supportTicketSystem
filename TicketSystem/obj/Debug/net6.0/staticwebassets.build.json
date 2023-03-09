@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aYrWDUZ3oI+4rSzKvU5Q8kBDHWTX6geoX9oSxJErEUs=",
+  "Hash": "fbLav1WQVLULUksRPHPKMup0TE5QnZ7n7c5fTQGWxGQ=",
   "Source": "TicketSystem",
   "BasePath": "_content/TicketSystem",
   "Mode": "Default",
@@ -272,6 +272,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\css\\styles.css",
+      "SourceId": "TicketSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\",
+      "BasePath": "_content/TicketSystem",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
       "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\favicon.ico",
       "SourceId": "TicketSystem",
       "SourceType": "Discovered",
@@ -287,6 +304,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\datatables-simple-demo.js",
+      "SourceId": "TicketSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\",
+      "BasePath": "_content/TicketSystem",
+      "RelativePath": "js/datatables-simple-demo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\scripts.js",
+      "SourceId": "TicketSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\",
+      "BasePath": "_content/TicketSystem",
+      "RelativePath": "js/scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
       "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\site.js",

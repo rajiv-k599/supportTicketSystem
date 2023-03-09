@@ -33,8 +33,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
       "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\js\\site.js",
