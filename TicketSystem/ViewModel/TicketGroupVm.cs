@@ -1,4 +1,6 @@
-﻿namespace TicketSystem.ViewModel
+﻿using TicketSystem.Models.Ticket;
+
+namespace TicketSystem.ViewModel
 {
     public class TicketGroupVm
     {
@@ -6,5 +8,7 @@
         public string Name { get; set; }
         public string Description { get; set; }
         public char Status { get; set; }
+
+        public List<TicketGroup> TicketGroupLists { get; set; }
     }
 }

@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\TicketSystem.bundle.scp.css"
     },
     {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\Images\\b07b0599-1de5-4466-8018-c76a18ee5a08-citizenship front.jpg",
+      "PackagePath": "staticwebassets\\Images\\b07b0599-1de5-4466-8018-c76a18ee5a08-citizenship front.jpg"
+    },
+    {
+      "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\Images\\db231ded-2750-405c-bb63-681a8f900380-IMG_20181029_121312~2.jpg",
+      "PackagePath": "staticwebassets\\Images\\db231ded-2750-405c-bb63-681a8f900380-IMG_20181029_121312~2.jpg"
+    },
+    {
       "Id": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

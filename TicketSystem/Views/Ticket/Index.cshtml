@@ -1,0 +1,62 @@
+﻿@model TicketSystem.ViewModel.TicketVm
+@{
+    int n = 1;
+    Layout = "Layout";
+}
+
+<nav class="navbar navbar-expand-sm bg-light ">
+    <div class="container">Ticket Info</div>
+    <div class="container-fluid justify-content-end">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item me-1">
+                <a class="nav-link text-white b1" asp-controller="Ticket" asp-action="Create">Create</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white b1" asp-controller="Ticket" asp-action="Index">All List</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+
+<div class="container mt-3">
+
+    <table class="table table-bordered table-responsive table-light" id="myTable">
+        <thead>
+            <tr>
+                <th>Sn</th>
+                <th>Image</th>
+                <th>Ticket Group</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Created By</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var items in Model.TicketLists)
+            {
+                <tr>
+                    <td>@n</td>
+                    <td><img src="~/Images/@items.Image" alt="" height=50 width=50 /></td>
+                    <td>@items.TicketGroup.Name</td>
+                    <td>@items.Title</td>
+                    <td>@items.Description</td>
+                    <td>@items.CreatedBy</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" asp-action="Edit" asp-controller="Ticket" asp-route-id="@items.Id"><i class="fa-solid fa-pen-to-square"></i> Update</a>
+                        <a class="btn btn-warning btn-sm" asp-action="Details" asp-controller="Ticket" asp-route-id="@items.Id"><i class="fa-sharp fa-regular fa-eye"></i> View</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-controller="Ticket" asp-route-id="@items.Id"><i class="fa-solid fa-trash"></i> Delete</a>
+                    </td>
+                    @{
+                        n++;
+                    }
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

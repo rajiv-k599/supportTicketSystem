@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "Layout";
+}
+@model TicketSystem.ViewModel.TicketGroupVm
+
+<nav class="navbar navbar-expand-sm bg-light ">
+    <div class="container">Ticket Group Info</div>
+    <div class="container-fluid justify-content-end">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item me-1">
+                <a class="nav-link text-white btn active b1" asp-controller="TicketGroup" asp-action="Create">Create</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white btn b1" asp-controller="TicketGroup" asp-action="Index">All List</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+<div class="container p-5">
+    <div class="card m-auto col-6">
+        <div class="card-header">
+            Edit Ticket Group
+        </div>
+        <div class="card-body">
+            <form class="" method="post" asp-action="Edit">
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label for="groupName">Group Name:</label>
+                    <input type="text" class="form-control" id="groupName" asp-for="Name" placeholder="Enter group name" required>
+                </div>
+                <div class="form-group">
+                    <label for="groupDescription">Group Description:</label>
+                    <textarea class="form-control" id="groupDescription" rows="3" asp-for="Description" placeholder="Enter group description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
