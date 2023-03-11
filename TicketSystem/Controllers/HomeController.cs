@@ -2,6 +2,8 @@
 using AspNetCoreHero.ToastNotification.Notyf;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using TicketSystem.Constants;
+using TicketSystem.Data;
 using TicketSystem.Models;
 
 namespace TicketSystem.Controllers
@@ -10,15 +12,23 @@ namespace TicketSystem.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly INotyfService _notyfService;
+        private readonly AppDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger,INotyfService notyfService)
+        public HomeController(ILogger<HomeController> logger,INotyfService notyfService, AppDbContext dbContext)
         {
             _logger = logger;
             _notyfService = notyfService;
+            _dbContext= dbContext;
         }
 
         public IActionResult Index()
         {
+            var totalCustomer = _dbContext.Customers.Where(x => x.Status == Status.Active).ToList();
+            var openTicket = _dbContext.Tickets.Where(x => x.Status == Status.Open).ToList();
+            var closedTicket = _dbContext.Tickets.Where(x => x.Status == Status.Closed).ToList();
+            ViewBag.TotalCustomer = totalCustomer.Count;
+            ViewBag.OpenTicket = openTicket.Count;
+            ViewBag.ClosedTicket = closedTicket.Count;
             return View();
         }
 

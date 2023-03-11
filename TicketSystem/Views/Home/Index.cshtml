@@ -2,8 +2,36 @@
     ViewData["Title"] = "Home Page";
     Layout = "Layout";
 }
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Dashboard</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white text-lg-center mb-4">
+                <div class="card-body">Total Active Customer</div>
+                <div class="card-footer " style="font-size:larger;">
+                    @ViewBag.TotalCustomer
+                </div>
+            </div>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white text-lg-center mb-4">
+                <div class="card-body">Total Open Tickets</div>
+                <div class="card-footer " style="font-size:larger;">
+                    @ViewBag.OpenTicket
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white text-lg-center mb-4">
+                <div class="card-body">Total Closed Ticket</div>
+                <div class="card-footer " style="font-size:larger;">
+                    @ViewBag.ClosedTicket
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

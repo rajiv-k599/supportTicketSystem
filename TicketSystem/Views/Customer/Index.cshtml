@@ -3,7 +3,7 @@
     int n = 1;
     Layout = "Layout";
 }
-
+<link href="~/lib/DataTables/datatables.min.css" rel="stylesheet" asp-append-version="true" />
 <nav class="navbar navbar-expand-sm bg-light ">
     <div class="container">Customer Info</div>
     <div class="container-fluid justify-content-end">
@@ -21,9 +21,9 @@
 
 </nav>
 
-<div class="container mt-3">
-
-    <table class="table table-bordered table-responsive table-light" id="myTable">
+<div class="container-fluid">
+    <div class="align-items-center justify-content-center mt-3 ms-1 me-1 bg-light rounded p-2">
+    <table class="table table-striped table-light" id="myTable" style="width:100%">
         <thead>
             <tr>
                 <th>Sn</th>
@@ -33,7 +33,7 @@
                 <th>Phone No</th>
                 <th>Pan No</th>
 
-                <th>Action</th>
+                <th width="20%">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -60,6 +60,7 @@
             }
         </tbody>
     </table>
+</div>
 </div>
 <script>
     $(document).ready(function () {
