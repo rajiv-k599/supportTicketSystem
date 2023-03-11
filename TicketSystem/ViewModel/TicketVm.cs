@@ -11,6 +11,8 @@ namespace TicketSystem.ViewModel
         public string Title { get; set; }
 
         public IFormFile Image { get; set; }
+
+        public string ImagePath { get; set; }
         public string Description { get; set; }
 
         public char Status { get; set; }

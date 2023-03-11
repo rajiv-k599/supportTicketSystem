@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e4+DT1a64CwhPwyQLvoQiusFFlJkb2AD34y6p5RvFcQ=",
+  "Hash": "wTHcFhI1j7398BPF3SO73C2Xr1KByCx2Wktxy7YOUTw=",
   "Source": "TicketSystem",
   "BasePath": "_content/TicketSystem",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\Images\\59d7ab18-0628-486d-bc09-c94c9e90bd9b-citizenship front.jpg",
+      "SourceId": "TicketSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\",
+      "BasePath": "_content/TicketSystem",
+      "RelativePath": "Images/59d7ab18-0628-486d-bc09-c94c9e90bd9b-citizenship front.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\59d7ab18-0628-486d-bc09-c94c9e90bd9b-citizenship front.jpg"
     },
     {
       "Identity": "D:\\rajiv dotnet\\TicketSystem\\TicketSystem\\wwwroot\\Images\\b07b0599-1de5-4466-8018-c76a18ee5a08-citizenship front.jpg",

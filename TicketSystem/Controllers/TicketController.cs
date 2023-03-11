@@ -127,6 +127,23 @@ namespace TicketSystem.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult Details(long id)
+        {
+            var ticket = _dbContext.Tickets.Where(x => x.Id == id && x.Status == Status.Open).FirstOrDefault();
+            var data = new TicketVm()
+            {
+                Id = ticket.Id,
+                Title = ticket.Title,
+                ImagePath = ticket.Image,
+                Description = ticket.Description,
+                Status = ticket.Status,
+                CreatedBy = ticket.CreatedBy,
+                TicketGroupId = ticket.TicketGroupId
+            };
+            data.TicketGroup = _dbContext.TicketGroups.Where(x => x.Id == ticket.TicketGroupId && x.Status == Status.Active).FirstOrDefault();
+            data.CommentLists = _dbContext.Comments.Where(x => x.TicketId == ticket.Id && x.Status == Status.Active).ToList();
+            return View(data);
+        }
         public IActionResult Delete(long id)
         {
             try
@@ -146,6 +163,50 @@ namespace TicketSystem.Controllers
                 _notyfService.Error(ex.Message);
             }
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult AddComment(CommentVm commentVm)
+        {
+            try
+            {
+                var data = new Comment()
+                {
+                    TicketId= commentVm.TicketId,
+                    CommentedBy = commentVm.CommentedBy,
+                    Content = commentVm.Content,
+                    CommentedOn = DateTime.Now,
+                    Status = Status.Active
+                };
+                _dbContext.Comments.Add(data);
+                _dbContext.SaveChanges();
+                _notyfService.Success("Added Sucessfully");
+            }
+            catch (Exception ex)
+            {
+                _notyfService.Success(ex.Message);
+            }
+            return RedirectToAction(nameof(Details), new { id = commentVm.TicketId });
+        }
+        public IActionResult RemoveComment(long id)
+        {
+            var data = _dbContext.Comments.Find(id);
+            try
+            {
+
+                if (data != null)
+                {
+                    data.Status = Status.Inactive;
+                }
+                _dbContext.Comments.Update(data);
+                _dbContext.SaveChanges();
+
+                _notyfService.Success("Removed Sucessfully");
+            }
+            catch (Exception ex)
+            {
+                _notyfService.Error(ex.Message);
+            }
+            return RedirectToAction(nameof(Details), new { id = data.TicketId });
         }
     }
 }

@@ -91,6 +91,8 @@ namespace TicketSystem.Controllers
             try
             {
                 var data = _dbContext.CustomerGroups.Find(id);
+                var Exist = _dbContext.Customers.Where(x => x.CustomerGroupId == id && x.Status == Status.Active).ToList();
+                if (Exist.Count > 0) { throw new Exception("In use cannot be deleted"); }
                 if (data != null)
                 {
                     data.Status = Status.Inactive;
